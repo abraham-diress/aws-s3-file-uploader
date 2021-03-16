@@ -1,5 +1,7 @@
 import db  from '../database/models/';
 import dotenv from 'dotenv';
+import aws from 'aws-sdk';
+
 dotenv.config();
 
 const { File } = db;
