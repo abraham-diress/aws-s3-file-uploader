@@ -1,7 +1,7 @@
 # s3-file-uploader
 Code template to upload files to S3 using nodejs
 
-## Running the applications
+## Running the application
 ### Manually
 Update the database connection by updating
 DATABASE_HOST=
