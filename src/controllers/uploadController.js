@@ -1,7 +1,6 @@
-import db  from '../database/models/';
-import dotenv from 'dotenv';
-import aws from 'aws-sdk';
-
+const db   = require('../database/models/');
+const dotenv  = require('dotenv');
+const aws   = require('aws-sdk');
 dotenv.config();
 
 const { File } = db;
@@ -41,5 +40,5 @@ class uploadController {
 
    }
 }
-    
-export default uploadController;
+
+module.exports = uploadController;

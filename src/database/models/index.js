@@ -1,11 +1,12 @@
-import fs from "fs";
-import path from "path";
+const fs  = require("fs");
+const path  = require("path");
 const config = require('../config/config.js');
-import { Sequelize } from "sequelize";
+const { Sequelize }  = require("sequelize");
 
 
 const basename = path.basename(__filename);
 const db = {};
+// console.log(config)
 const sequelize = new Sequelize(config.database, config.username, config.password,{
     host: config.host,
     dialect: config.dialect,
@@ -36,4 +37,4 @@ try {
     console.error('Unable to connect to the database:', error);
   }
 
-export default db;
+module.exports = db;

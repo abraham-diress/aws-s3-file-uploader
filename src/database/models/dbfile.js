@@ -1,4 +1,4 @@
-import { Model, DataTypes } from 'sequelize';
+const { Model, DataTypes } = require('sequelize');
 
 module.exports = (sequelize) => {
   class File extends Model {
